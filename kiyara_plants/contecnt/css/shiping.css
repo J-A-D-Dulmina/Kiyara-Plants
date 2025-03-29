@@ -1,0 +1,21 @@
+.shiping-main {
+    background-color: #fff;
+    padding: 10.8rem 0 9.6rem 0;
+}
+
+.main-nav-list .shiping {
+    color: #fcdb1b !important;
+}
+
+
+
+
+
+.payment-main {
+    max-width: 140rem;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10rem;
+    padding: 0 3.2rem;
+}

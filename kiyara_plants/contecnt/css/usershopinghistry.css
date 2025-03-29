@@ -1,0 +1,23 @@
+.shoping-histry {
+    color: #fcdb1b !important;
+}
+
+.account-dt {
+    color: #000000 !important;
+}
+
+.mycart-prducts-main {
+    background-color: #fff !important;
+}
+
+.shipde-date {
+    font-size: 1.4rem;
+}
+
+.status {
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: #287b7b;
+
+    align-self: flex-start;
+}

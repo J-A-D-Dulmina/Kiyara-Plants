@@ -1,0 +1,273 @@
+/* Admin Settings CSS */
+
+:root {
+    --primary-color: #4caf50;
+    --secondary-color: #388e3c;
+    --light-color: #f1f8e9;
+    --dark-color: #F5F5F5;
+    --gray-color: #f5f5f5;
+    --sidebar-width: 250px;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f8f9fa;
+    overflow-x: hidden;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: var(--sidebar-width);
+    height: 100vh;
+    background-color: var(--dark-color);
+    color: #333;
+    padding-top: 20px;
+    transition: all 0.3s;
+    z-index: 1000;
+}
+
+.sidebar-brand {
+    padding: 15px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.sidebar-brand img {
+    max-width: 120px;
+}
+
+.sidebar-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar-menu li {
+    margin: 5px 0;
+}
+
+.sidebar-menu a {
+    padding: 15px;
+    display: block;
+    color: #333;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+.sidebar-menu a:hover,
+.sidebar-menu a.active {
+    background-color: var(--primary-color);
+    color: white;
+    border-left: 4px solid var(--secondary-color);
+}
+
+.sidebar-menu i {
+    margin-right: 10px;
+}
+
+.content {
+    margin-left: var(--sidebar-width);
+    padding: 20px;
+    transition: all 0.3s;
+}
+
+.navbar {
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.card {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.card-header {
+    background-color: var(--light-color);
+    border: none;
+    padding: 15px 20px;
+    font-weight: 600;
+    color: var(--dark-color);
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-label {
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+}
+
+.required-label::after {
+    content: " *";
+    color: red;
+}
+
+.btn-success {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.btn-success:hover {
+    background-color: var(--secondary-color);
+    border-color: var(--secondary-color);
+}
+
+.nav-pills .nav-link {
+    color: #6c757d;
+    padding: 10px 15px;
+    border-radius: 0;
+    border-bottom: 2px solid transparent;
+}
+
+.nav-pills .nav-link.active {
+    background-color: transparent;
+    color: var(--primary-color);
+    border-bottom: 2px solid var(--primary-color);
+}
+
+.form-check-input:checked {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+/* Settings specific styles */
+.settings-tab-content {
+    padding: 20px 0;
+}
+
+.settings-section {
+    margin-bottom: 30px;
+}
+
+.settings-section-title {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #e9ecef;
+    color: var(--dark-color);
+}
+
+.settings-hint {
+    font-size: 13px;
+    color: #6c757d;
+    margin-top: 5px;
+}
+
+.payment-method-card {
+    border: 1px solid #dee2e6;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 15px;
+    transition: all 0.3s;
+}
+
+.payment-method-card:hover {
+    border-color: var(--primary-color);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.payment-method-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.payment-method-icon {
+    width: 40px;
+    height: 40px;
+    background-color: var(--light-color);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15px;
+}
+
+.payment-method-title {
+    font-weight: 600;
+    margin-bottom: 0;
+}
+
+.shipping-method-item {
+    padding: 15px;
+    border: 1px solid #dee2e6;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    transition: all 0.3s;
+}
+
+.shipping-method-item:hover {
+    border-color: var(--primary-color);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.shipping-method-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.shipping-method-name {
+    font-weight: 600;
+    margin-bottom: 0;
+}
+
+.shipping-method-rate {
+    font-weight: 500;
+    color: var(--primary-color);
+}
+
+.tax-settings-card {
+    background-color: var(--light-color);
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.tax-rate-display {
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--primary-color);
+    margin-bottom: 5px;
+}
+
+.tax-settings-note {
+    color: #6c757d;
+    margin-bottom: 0;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 991.98px) {
+    .sidebar {
+        width: 0;
+        padding: 0;
+        overflow: hidden;
+    }
+    
+    .content {
+        margin-left: 0;
+    }
+    
+    .sidebar.active {
+        width: var(--sidebar-width);
+        padding-top: 20px;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .card-body {
+        padding: 15px;
+    }
+    
+    .nav-pills .nav-link {
+        padding: 8px 10px;
+        font-size: 14px;
+    }
+} 

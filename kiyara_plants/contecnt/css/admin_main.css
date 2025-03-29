@@ -1,0 +1,254 @@
+/* Admin Main Dashboard CSS */
+
+:root {
+    --primary-color: #4caf50;
+    --secondary-color: #388e3c;
+    --light-color: #f1f8e9;
+    --dark-color: #F5F5F5;
+    --gray-color: #f5f5f5;
+    --sidebar-width: 250px;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f8f9fa;
+    overflow-x: hidden;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: var(--sidebar-width);
+    height: 100vh;
+    background-color: var(--dark-color);
+    color: #333;
+    padding-top: 20px;
+    transition: all 0.3s;
+    z-index: 1000;
+}
+
+.sidebar-brand {
+    padding: 15px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.sidebar-brand img {
+    max-width: 120px;
+}
+
+.sidebar-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar-menu li {
+    margin: 5px 0;
+}
+
+.sidebar-menu a {
+    padding: 15px;
+    display: block;
+    color: #333;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+.sidebar-menu a:hover,
+.sidebar-menu a.active {
+    background-color: var(--primary-color);
+    color: white;
+    border-left: 4px solid var(--secondary-color);
+}
+
+.sidebar-menu i {
+    margin-right: 10px;
+}
+
+.content {
+    margin-left: var(--sidebar-width);
+    padding: 20px;
+    transition: all 0.3s;
+}
+
+.navbar {
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.card {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.stats-card {
+    padding: 20px;
+    border-radius: 10px;
+    background: white;
+    transition: all 0.3s;
+    height: 100%;
+}
+
+.stats-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+.stats-card .icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.stats-card .orders-icon {
+    background-color: #e3f2fd;
+    color: #1976d2;
+}
+
+.stats-card .revenue-icon {
+    background-color: #e8f5e9;
+    color: #388e3c;
+}
+
+.stats-card .customers-icon {
+    background-color: #fff8e1;
+    color: #f57c00;
+}
+
+.stats-card .products-icon {
+    background-color: #e8eaf6;
+    color: #3f51b5;
+}
+
+.stats-card h3 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.stats-card p {
+    color: #6c757d;
+    margin-bottom: 0;
+}
+
+.recent-orders th {
+    font-weight: 600;
+    color: #495057;
+}
+
+.order-status {
+    padding: 5px 10px;
+    border-radius: 50px;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.top-products-table .product-img {
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+.top-products-table .product-info {
+    display: flex;
+    align-items: center;
+}
+
+.top-products-table .product-name {
+    margin-left: 10px;
+    font-weight: 500;
+}
+
+.chart-container {
+    position: relative;
+    height: 300px;
+    margin-bottom: 15px;
+}
+
+/* Activity section */
+.activity-item {
+    display: flex;
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #e9ecef;
+}
+
+.activity-item:last-child {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    border-bottom: none;
+}
+
+.activity-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #e9ecef;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15px;
+    flex-shrink: 0;
+}
+
+.activity-content {
+    flex-grow: 1;
+}
+
+.activity-title {
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.activity-time {
+    font-size: 12px;
+    color: #6c757d;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 991.98px) {
+    .sidebar {
+        width: 0;
+        padding: 0;
+        overflow: hidden;
+    }
+    
+    .content {
+        margin-left: 0;
+    }
+    
+    .sidebar.active {
+        width: var(--sidebar-width);
+        padding-top: 20px;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .stats-row {
+        margin-bottom: 0;
+    }
+    
+    .stats-col {
+        margin-bottom: 20px;
+    }
+    
+    .stats-card .icon {
+        width: 50px;
+        height: 50px;
+        font-size: 20px;
+    }
+    
+    .stats-card h3 {
+        font-size: 20px;
+    }
+} 

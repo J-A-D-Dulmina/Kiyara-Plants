@@ -1,0 +1,141 @@
+.main-nav-list .contact {
+    color: #fcdb1b !important;
+}
+
+
+.contact-main {
+    background-color: #fff;
+    padding: 10.8rem 0 9.6rem 0;
+}
+
+.contact-main-section {
+    max-width: 140rem;
+    margin: 0 auto;
+    padding: 0 3.2rem;
+}
+
+.icon-detail-contact {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: center;
+    gap: 3rem;
+    margin: 0 auto;
+    justify-content: center;
+    justify-items: center;
+    text-align: center;
+    font-size: 1.6rem;
+    margin-bottom: 8%;
+}
+
+
+
+.icon-svg-contact {
+    padding: 1.5rem;
+    background-color: #4fc4c3;
+    width: 6rem;
+    height: 6rem;
+    height: auto;
+    margin: 0 auto;
+    border-radius: 50%;
+
+
+}
+
+.icon-box {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.icon-detail-contact path {
+    fill: #ffffff !important;
+}
+
+.contact-section-fill-main {
+    max-width: 140rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 0 auto;
+    align-items: center;
+    justify-items: start;
+    padding: 2%;
+    background-color: #eaf2f2;
+    border-radius: 2rem;
+
+}
+
+.contact-main-image {
+    max-width: 100%;
+    /* height: 60%; */
+    margin: 0 auto;
+}
+
+.contaact-form-main {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    margin: 2rem;
+}
+
+.contaact-form-main-name {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 100%;
+    margin: 0 auto;
+    gap: 2rem;
+}
+
+.contact-from {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.contact-from label {
+    font-size: 1.8rem;
+}
+
+.contact-from input {
+    padding: 0.7rem 1rem;
+    border: 1px solid #287b7b;
+    border-radius: 5px;
+    font-size: 1.6rem;
+
+}
+
+.contact-from textarea {
+    padding: 0.6rem 1rem;
+    border: 1px solid #287b7b;
+    border-radius: 5px;
+    font-size: 1.6rem;
+
+
+}
+
+
+.contaact-form-main h1 {
+    font-size: 3.2rem;
+    font-weight: 500;
+}
+
+
+.form-submit-bt {
+    /* width: 10rem; */
+    align-self: flex-start;
+    border: none;
+    padding: 1.5rem 5rem;
+    background-color: #287b7b;
+    border-radius: 5px;
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: #fff;
+    transition: ease-out 0.5s;
+}
+
+.form-submit-bt:hover,
+.form-submit-bt:active {
+    cursor: pointer;
+    box-shadow: inset 20rem 0 0 0 #4fc4c3;
+    background-color: #4fc4c3;
+    color: #fff;
+}

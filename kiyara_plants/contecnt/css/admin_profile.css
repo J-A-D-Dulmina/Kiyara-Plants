@@ -1,0 +1,208 @@
+/* Admin Profile CSS */
+
+:root {
+    --primary-color: #4caf50;
+    --secondary-color: #388e3c;
+    --light-color: #f1f8e9;
+    --dark-color: #F5F5F5;
+    --gray-color: #f5f5f5;
+    --sidebar-width: 250px;
+}
+
+/* Sidebar styles */
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: var(--sidebar-width);
+    height: 100vh;
+    background-color: var(--dark-color);
+    color: #333;
+    padding-top: 20px;
+    transition: all 0.3s;
+    z-index: 1000;
+}
+
+.sidebar-brand {
+    padding: 15px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.sidebar-brand img {
+    max-width: 120px;
+}
+
+.sidebar-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar-menu li {
+    margin: 5px 0;
+}
+
+.sidebar-menu a {
+    padding: 15px;
+    display: block;
+    color: #333;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+.sidebar-menu a:hover,
+.sidebar-menu a.active {
+    background-color: var(--primary-color);
+    color: white;
+    border-left: 4px solid var(--secondary-color);
+}
+
+.sidebar-menu i {
+    margin-right: 10px;
+}
+
+/* Profile header */
+.profile-header {
+    background-color: #4caf50;
+    color: white;
+    padding: 30px;
+    text-align: center;
+    border-radius: 10px 10px 0 0;
+    margin-bottom: 20px;
+}
+
+.profile-avatar {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid rgba(255, 255, 255, 0.7);
+    margin-bottom: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.profile-avatar-placeholder {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: #e9ecef;
+    color: #adb5bd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 60px;
+    margin: 0 auto 15px auto;
+    border: 5px solid rgba(255, 255, 255, 0.7);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.profile-name {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.profile-info {
+    font-size: 16px;
+    opacity: 0.9;
+}
+
+/* Tabs styling */
+.nav-tabs {
+    padding: 0 20px;
+    border-bottom: 1px solid #e9ecef;
+}
+
+.nav-tabs .nav-link {
+    border: none;
+    color: #6c757d;
+    font-weight: 500;
+    padding: 12px 20px;
+    margin-right: 5px;
+}
+
+.nav-tabs .nav-link.active {
+    color: #4caf50;
+    border-bottom: 3px solid #4caf50;
+    background-color: transparent;
+}
+
+.nav-tabs .nav-link:hover {
+    border-color: transparent;
+    color: #4caf50;
+}
+
+/* Form styling */
+.tab-content {
+    padding: 30px;
+}
+
+.form-label {
+    font-weight: 500;
+    color: #495057;
+    margin-bottom: 8px;
+}
+
+.form-control {
+    padding: 10px 15px;
+    border-radius: 6px;
+    border: 1px solid #ced4da;
+    margin-bottom: 20px;
+}
+
+.form-control:focus {
+    border-color: #4caf50;
+    box-shadow: 0 0 0 0.2rem rgba(76, 175, 80, 0.25);
+}
+
+.btn-success {
+    background-color: #4caf50;
+    border-color: #4caf50;
+    padding: 10px 25px;
+    font-weight: 500;
+}
+
+.btn-success:hover {
+    background-color: #388e3c;
+    border-color: #388e3c;
+}
+
+/* Image preview */
+.preview-image {
+    max-width: 100%;
+    height: auto;
+    max-height: 150px;
+    border-radius: 8px;
+    margin-top: 10px;
+    display: none;
+    border: 1px solid #dee2e6;
+}
+
+/* Tab content padding */
+.tab-pane {
+    padding: 20px 0;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    .profile-header {
+        padding: 20px;
+    }
+    
+    .profile-avatar,
+    .profile-avatar-placeholder {
+        width: 120px;
+        height: 120px;
+        font-size: 50px;
+    }
+    
+    .tab-content {
+        padding: 20px 15px;
+    }
+    
+    .nav-tabs .nav-link {
+        padding: 10px 15px;
+        font-size: 14px;
+    }
+} 

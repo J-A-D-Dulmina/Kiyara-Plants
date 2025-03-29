@@ -1,0 +1,776 @@
+.main {
+    z-index: 3;
+}
+
+.main-nav-list .home {
+    color: #fcdb1b !important;
+}
+
+.section-hero {
+    background-color: #eaf2f2;
+    /* padding: 10.8rem 0 9.6rem 0; */
+    padding: 1% 3.2rem;
+    /* margin-top: 5%; */
+
+}
+
+.hero {
+    max-width: 140rem;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 9.6rem;
+    align-items: center;
+}
+
+.heading-tag {
+    font-size: 1.6rem;
+    font-weight: 600;
+    margin-bottom: 2.4rem;
+
+    animation: slideInFromBottom 0.5s ease-out;
+}
+
+@keyframes slideInFromBottom {
+    0% {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.heading-primary {
+    font-size: 6.2rem;
+    font-weight: 700;
+    line-height: 1.3;
+    margin-bottom: 3.2rem;
+    animation: heroEntrance 1s ease-out;
+}
+
+.hero-description {
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: #777A73;
+    line-height: 1.6;
+    margin-bottom: 4.8rem;
+
+    animation: heroEntrance 1s ease-out;
+}
+
+.hero-img-box {
+    position: relative;
+}
+
+
+.hero-img {
+    max-width: 100%;
+    height: auto;
+    transform: rotate(30deg);
+    /* Add a slight rotation */
+    transition: transform 1s ease-in-out;
+    /* Add a smooth rotation transition */
+}
+
+/* Add a class to adjust the scale after the page loads */
+.hero-img.loaded {
+    transform: rotate(0deg);
+    /* Restore to no rotation */
+}
+
+.hero-img-overlay {
+    position: absolute;
+    top: -50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 98%;
+    height: auto;
+    transition: top 1s, left 1s;
+}
+
+.hero-img-overlay.loaded {
+    top: 43%;
+    left: 50%;
+}
+
+
+.hero-buutons {
+    border-radius: 10px 0 10px 0 !important;
+}
+
+/* ------------------------------------------------------------------------ */
+
+
+
+.section-hero-main-plants {
+    z-index: 1;
+
+}
+
+
+
+.main-plants {
+    max-width: 140rem;
+    margin: 10rem auto;
+    display: grid;
+    grid-template-columns: 1.5fr repeat(3, 1fr);
+    gap: 1rem;
+    align-items: end;
+
+}
+
+
+
+
+.produc-main-big {
+    display: grid;
+    grid-template-columns: 0.9fr 1.1fr;
+    align-items: center;
+    gap: 0.5rem;
+    background-color: #287b7b;
+    border-radius: 2rem;
+    padding: 2.5rem 2rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+
+
+}
+
+.produc-main-noraml {
+    display: grid;
+    grid-template-columns: 0.75fr 1.35fr;
+    align-items: center;
+    background-color: #fff;
+    gap: 0.5rem;
+    padding: 1rem 1rem;
+    border-radius: 1.5rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+
+
+
+.details-big {
+    text-align: left;
+    z-index: 2;
+}
+
+
+.details-big h3 {
+    font-size: 2.2rem;
+    color: #fff;
+    font-weight: 600;
+    padding-bottom: 1.8rem;
+}
+
+.details-big h4 {
+    font-size: 2.2rem;
+    color: #fff;
+    font-weight: 600;
+    line-height: 2;
+}
+
+.details-big p {
+    font-size: 1.6rem;
+    line-height: 1.5;
+    color: #cecfcc;
+    font-weight: 400;
+
+}
+
+/* ------------------------------- */
+
+.details h3 {
+    font-size: 1.8rem;
+    color: #000000;
+    font-weight: 600;
+    padding-bottom: 1.2rem;
+}
+
+.details h4 {
+    font-size: 1.8rem;
+    color: #eeb1c4;
+    font-weight: 600;
+    line-height: 2.5;
+}
+
+.details p {
+    font-size: 1.4rem;
+    line-height: 1.2;
+    color: #cecfcc;
+    font-weight: 400;
+
+}
+
+
+
+.produc-main-img-box {
+    text-align: center;
+}
+
+.product-main-img {
+    max-width: 110%;
+    height: auto;
+    display: block;
+    margin: 0 auto
+}
+
+.produc-main-big-img-box-big {
+    position: relative;
+    padding: 2rem;
+
+}
+
+.produc-main-big-img {
+    max-width: 100%;
+    bottom: 0rem;
+    left: 0;
+    transform: translate(0, 0);
+    transition: max-width 1.2s ease-in-out;
+}
+
+.produc-main-big-img.loaded {
+    position: absolute;
+    max-width: 220%;
+    bottom: -9rem;
+    left: 50%;
+    transform: translate(-50%, 0);
+    z-index: 1;
+
+}
+
+/* ------------------------------------------------------------------------- */
+
+
+.slider-button-section {
+    display: grid;
+    margin: 0 auto;
+    max-width: 144rem;
+    align-items: center;
+    justify-items: end;
+
+}
+
+.slider-button {
+    background-color: #fff;
+    border-radius: 100%;
+    border: none;
+    cursor: pointer;
+    z-index: 2;
+    width: 3.5rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+}
+
+.slider-button:hover,
+.slider-button:active {
+    transform: scale(1.1);
+    /* Scale the button by 10% when hovered */
+}
+
+.slider-button path {
+    fill: #cecfcc;
+}
+
+
+.slider-button-section {
+    position: relative;
+    top: -19.2rem;
+    text-align: center;
+}
+
+
+
+/* --------------------------Slide container styles------------------------------------- */
+.slide {
+    opacity: 0;
+    transform: translateY(100px);
+}
+
+/* Add a delay to the first slide for a smooth start */
+.slide.loaded {
+    animation: slideIn 1s forwards, fadeIn 1s forwards;
+}
+
+/* Slide in animation */
+@keyframes slideIn {
+    0% {
+        transform: translateY(100px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+
+
+.slider-button-section {
+    opacity: 0;
+    transform: translateX(2rem);
+    transition: opacity 0.1s, transform 1s;
+}
+
+/* Add smooth right-to-left slide-in effect when the 'loaded' class is added */
+.slider-button-section.hidden {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+
+
+
+
+
+
+
+
+/* -------------------------------------------------------- */
+
+
+
+.plant-collection {
+    background-color: #fff;
+    padding: 10.8rem 0 9.6rem 0;
+}
+
+.plant-collection-main {
+    max-width: 90rem;
+    margin: 0 auto;
+    padding: 0 3.2rem;
+    text-align: center;
+}
+
+.plant-collection-tital {
+    text-align: center;
+    line-height: 5rem;
+    padding-bottom: 3rem;
+}
+
+.plant-collection-tital h1 {
+    font-size: 4.4rem;
+    font-weight: 600;
+}
+
+.plant-collection-tital h3 {
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: #777A73;
+
+}
+
+
+
+.plant-collection-tab {
+
+    margin: 20% auto 3% auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+    align-items: center;
+
+}
+
+.plant-collection-tab-plants {
+    background-color: #eaf2f2;
+    border-radius: 10%;
+    padding-top: 35%;
+    transition: box-shadow 0.3s ease;
+
+}
+
+
+.plant-collection-tab-plants:hover,
+.plant-collection-tab-plants:active {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+
+    .plant-collection-tab-img.loaded {
+        max-width: 110%;
+        transition: max-width 0.3s ease-in-out;
+
+    }
+
+}
+
+.plant-collection-tab-img-box {
+
+    position: relative;
+    padding: 2rem;
+}
+
+
+.plant-collection-tab-img {
+    position: absolute;
+    max-width: 0%;
+    margin: 0 auto;
+    left: 0;
+    transform: translate(0, 0);
+    transition: max-width 1.2s ease-in-out;
+
+}
+
+.plant-collection-tab-img.loaded {
+    position: absolute;
+    max-width: 100%;
+    padding-bottom: 5%;
+    bottom: 45%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    z-index: 1;
+
+}
+
+.plant-collection-tab-plants-text {
+
+    margin: -5% auto 5%;
+}
+
+
+.plant-collection-tab-plants h2 {
+    font-size: 2.4rem;
+    font-weight: 600;
+    line-height: 4rem;
+    margin-bottom: 3%;
+}
+
+.plant-collection-tab-plant-price {
+    display: flex;
+    justify-content: center;
+
+
+}
+
+.plant-collection-tab-plant-price h3 {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #777A73;
+    margin-bottom: 5%;
+
+}
+
+.plant-collection-tab-plant-price .number {
+
+    color: #eeb1c4 !important;
+}
+
+
+
+
+
+
+
+/* ------------------------------------------------- */
+
+.Pot-main-hero {
+    background-color: #ffffff;
+    padding: 10.8rem 3.2rem 9.6rem 3.2rem;
+
+}
+
+.Pot-hero {
+    max-width: 100rem;
+    background-color: #287b7b;
+    margin: 0 auto;
+    position: relative;
+    border-radius: 3rem;
+
+}
+
+.Pot-hero-sections {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    justify-items: center;
+    padding: 5% 0;
+
+
+}
+
+.Pot-hero-sections-images {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-items: center;
+
+}
+
+
+
+.Pot-hero-sections-images-small {
+
+    position: absolute;
+    margin: 0 auto;
+    max-width: 9%;
+    border-radius: 50%;
+    align-self: self-end;
+    margin-right: 15%;
+    border: 4px solid #287b7b;
+
+}
+
+.Pot-hero-sections-images-big {
+    position: relative;
+    margin: 0 auto;
+    max-width: 60%;
+    border-radius: 50%;
+}
+
+.Pot-hero-sections-left h1 {
+    font-size: 3.2rem;
+    padding-left: 10%;
+    margin-right: -10%;
+    font-weight: 600;
+    color: #fff !important;
+    line-height: 4.5rem;
+}
+
+.Pot-hero-sections-right {
+    text-align: left;
+    font-size: 1.6rem;
+    color: #d5d6d1;
+    line-height: 2rem;
+    margin-left: -5%;
+    padding-right: 10%;
+
+}
+
+.Pot-hero-sections-right p {
+    margin-bottom: 6%;
+}
+
+.Phsr-lmbt {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.Phsr-lmbt:hover,
+.Phsr-lmbt:active {
+    background: linear-gradient(135deg, #287b7b, #4fc4c3, #eeb1c4, #fcdb1b, #146864);
+    box-shadow:
+        inset 20rem 0 0 0 transparent,
+        inset -20rem 0 0 0 transparent,
+        inset 0 20rem 0 0 transparent,
+        inset 0 -20rem 0 0 transparent !important;
+}
+
+
+/* -------------------------------------------------------------- */
+
+.best-sell-collection-main {
+    /* background-color: #eaf2f2; */
+    background-color: #fff;
+    padding: 10.8rem 0 9.6rem 0;
+}
+
+.best-sell-collection {
+    max-width: 90rem;
+    margin: 0 auto;
+    padding: 0 3.2rem;
+    text-align: center;
+
+}
+
+
+.plant-collection-tab-plants-new {
+    /* background-color: #fff !important; */
+    background-color: #eaf2f2 !important;
+
+}
+
+.plant-collection-tab-tow-side {
+    margin-top: 10% !important;
+    margin-bottom: 0 !important;
+}
+
+.plant-collection-tab-plants-price {
+    line-height: 4rem;
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: #eeb1c4;
+}
+
+.plant-collection-tab-plants-details h3 {
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: #777A73;
+}
+
+
+.plant-collection-tab-plants-details h2 {
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: #22271C;
+    line-height: 1.5rem !important;
+    margin-bottom: 1% !important;
+    margin-top: 8%;
+}
+
+.plant-collection-tab-plants-box {
+    padding: 0 !important;
+}
+
+
+
+.plant-collection-tab-plants a {
+    margin-bottom: -20%;
+
+}
+
+.plant-collection-catagrie-tab {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding-bottom: 50%;
+}
+
+.catagries {
+    padding: 6% 5%;
+    border-radius: 10rem;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+
+}
+
+.catagries {
+    padding: 6% 5%;
+    border-radius: 10rem;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transition: ease-out 0.5s;
+
+}
+
+.catagries:hover,
+.catagries:active {
+    padding: 6% 5%;
+    border-radius: 10rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+
+    cursor: pointer;
+    box-shadow: inset 30rem 0 0 0 #fcdb1b;
+    background-color: #fcdb1b;
+    color: #fff;
+
+}
+
+.catagries a {
+    text-decoration: none;
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: #22271C;
+
+}
+
+/* -------------------------------------------------- */
+
+.plant-grow-main {
+    /* background-color: #eaf2f2; */
+    background-color: #fff;
+    padding: 0 0 9.6rem 0;
+}
+
+.plant-grow-main-hero {
+    background-color: #eaf2f2;
+    max-width: 90rem;
+    margin: 0 auto;
+    padding: 0 0 0 3.2rem;
+    text-align: center;
+    border-radius: 3rem;
+
+}
+
+.plant-grow-hero-sections {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-items: center;
+    padding: 5% 0;
+
+
+}
+
+.plant-grow-sections-images {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-items: center;
+    margin-right: -20%;
+    margin-left: -20%;
+
+
+
+}
+
+
+.plant-grow-sections-images-small-box {
+    padding: 1.7% 1.5%;
+    max-width: 20%;
+    background-color: #287b7b;
+    border-radius: 50%;
+    border: 4px solid #ffffff;
+    position: absolute;
+    margin: 0 auto;
+    align-self: self-end;
+    margin-right: 12%;
+
+}
+
+.plant-grow-sections-images-small-box a {
+    text-decoration: none;
+    font-size: 1.4rem;
+    color: #fff;
+    line-height: 2rem;
+
+}
+
+.plant-grow-sections-images-small-box:hover,
+.plant-grow-sections-images-small-box:active {
+    background-color: #4fc4c3;
+}
+
+.plant-grow-sections-images-big {
+    position: relative;
+    margin: 0 auto;
+    max-width: 60%;
+    border-radius: 50%;
+}
+
+.plant-grow-hero-sections-right {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.plant-grow-hero-sections-right h1 {
+    font-size: 3.6rem;
+    font-weight: 500;
+    text-align: left;
+    line-height: 4rem;
+}
+
+.plant-grow-hero-sections-right h2 {
+    font-size: 1.4rem;
+    font-weight: 400;
+    text-align: left;
+    line-height: 2.2rem;
+    color: #777A73;
+    margin-top: 5%;
+}
+
+.plant-grow-hero-sections-right a {
+    align-self: self-start;
+    margin-top: 5%;
+}
