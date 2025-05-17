@@ -1,0 +1,264 @@
+/* Base sizing fix */
+html {
+    font-size: 62.5%; /* 10px = 1rem */
+}
+
+body {
+    font-size: 1.6rem;
+    line-height: 1.5;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Fix for oversize elements */
+.tital h1 {
+    font-size: 3.2rem;
+}
+
+.about h2,
+.team-main h2,
+.pot-paint-sec h2 {
+    font-size: 2.8rem;
+}
+
+.team-member-detail-main h3 {
+    font-size: 1.8rem;
+}
+
+.team-member-detail-main h4 {
+    font-size: 1.6rem;
+}
+
+.team-member img {
+    max-width: 15rem;
+}
+
+/* Adjust spacing */
+.main-about {
+    gap: 5rem;
+}
+
+.team {
+    gap: 3rem;
+}
+
+/* Contact button styles */
+.contact-link {
+    text-align: center;
+    font-size: 1.6rem;
+    margin-bottom: 3rem;
+}
+
+.contact-btn {
+    display: inline-block;
+    background-color: #287b7b;
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.6rem;
+    transition: all 0.3s ease;
+}
+
+.contact-btn:hover {
+    background-color: #1a5e5e;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.main-nav-list .about {
+    color: #fcdb1b !important;
+}
+
+.tital {
+    background-color: #009688;
+    color: #fff;
+    padding: 2rem;
+    text-align: center;
+}
+
+.tital h1 {
+    font-size: 3.6rem;
+    margin: 0;
+}
+
+.main-about-section {
+    max-width: 80rem;
+    margin: 2% auto;
+    padding: 2rem;
+}
+
+.main-about {
+    display: flex;
+    flex-direction: column;
+    gap: 10rem;
+}
+
+.about h2,
+.team-main h2 {
+    margin: 2rem 0;
+    text-align: center;
+    color: #009688;
+}
+
+.about h2 {
+    margin-bottom: 5rem;
+    color: #eeb1c4;
+}
+
+.team-main h2 {
+    padding-top: 10%;
+    border-top: 2px solid black;
+}
+
+.about p,
+.team p {
+    font-size: 1.6rem;
+    line-height: 1.5;
+    text-align: justify;
+    color: #777A73;
+}
+
+.team {
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+}
+
+.team-member {
+    margin: 3rem 0;
+    display: flex;
+}
+
+.team-member img {
+    max-width: 20rem;
+    border-radius: 50%;
+}
+
+.team-member-detail-main {
+    margin: 0 8%;
+}
+
+.team-member-detail-main h3 {
+    font-size: 1.8rem;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+    color: #eeb1c4;
+}
+
+.team-member-detail-main h4 {
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: #181818;
+    margin-bottom: 2rem;
+}
+
+.founder {
+    text-align: end !important;
+}
+
+.co-founder {
+    text-align: start !important;
+}
+
+.pot-paint-sec h2 {
+    font-size: 3.4rem;
+    margin: 5rem 0;
+    text-align: center;
+    font-weight: 500;
+    padding-top: 10%;
+    border-top: 2px solid black;
+}
+
+.about-main-image {
+    max-width: 100%;
+    margin: 0 auto;
+    margin-top: 5%;
+}
+
+.footer-grid {
+    padding-top: 2%;
+    border-top: 2px solid rgba(119, 122, 115, 0.521);
+}
+
+/* ------------------------------ */
+.Pot-main-hero {
+    background-color: #ffffff;
+    padding: 10.8rem 3.2rem 9.6rem 3.2rem;
+}
+
+.Pot-hero {
+    max-width: 100rem;
+    background-color: #287b7b;
+    margin: 0 auto;
+    position: relative;
+    border-radius: 3rem;
+}
+
+.Pot-hero-sections {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    justify-items: center;
+    padding: 5% 0;
+}
+
+.Pot-hero-sections-images {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-items: center;
+}
+
+.Pot-hero-sections-images-small {
+    position: absolute;
+    margin: 0 auto;
+    max-width: 9%;
+    border-radius: 50%;
+    align-self: self-end;
+    margin-right: 15%;
+    border: 4px solid #287b7b;
+}
+
+.Pot-hero-sections-images-big {
+    position: relative;
+    margin: 0 auto;
+    max-width: 60%;
+    border-radius: 50%;
+}
+
+.Pot-hero-sections-left h1 {
+    font-size: 3.2rem;
+    padding-left: 10%;
+    margin-right: -10%;
+    font-weight: 600;
+    color: #fff !important;
+    line-height: 4.5rem;
+}
+
+.Pot-hero-sections-right {
+    text-align: left;
+    font-size: 1.6rem;
+    color: #d5d6d1;
+    line-height: 2rem;
+    margin-left: -5%;
+    padding-right: 10%;
+}
+
+.Pot-hero-sections-right p {
+    margin-bottom: 6%;
+}
+
+.Phsr-lmbt {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.Phsr-lmbt:hover,
+.Phsr-lmbt:active {
+    background: linear-gradient(135deg, #287b7b, #4fc4c3, #eeb1c4, #fcdb1b, #146864);
+    box-shadow:
+        inset 20rem 0 0 0 transparent,
+        inset -20rem 0 0 0 transparent,
+        inset 0 20rem 0 0 transparent,
+        inset 0 -20rem 0 0 transparent !important;
+}

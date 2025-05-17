@@ -1,0 +1,283 @@
+.account-dt {
+    color: #fcdb1b !important;
+}
+
+.user-acount-secttion {
+    background-color: #ffffff;
+    /* padding: 10.8rem 0 9.6rem 0; */
+    padding: 1% 3.2rem;
+}
+
+
+.user-acount-secttion-main {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    max-width: 100rem;
+    margin: 5% auto;
+    background-color: #eaf2f2;
+    padding: 2% 2%;
+    border-radius: 5rem;
+
+
+}
+
+.user-nv-main {
+    display: flex;
+    flex-direction: column;
+    gap: 15%;
+}
+
+.user-nec-list li {
+    margin-bottom: 3rem;
+    padding: 2rem 1rem;
+    border-bottom: 2px solid #0000007a;
+}
+
+.logo-image {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.user-nec-list li {
+    list-style: none;
+}
+
+.user-nec-list a {
+    text-decoration: none;
+    font-size: 1.6rem;
+    color: black;
+}
+
+.detail-section {
+    margin-left: 10%;
+}
+
+
+.user-nv-main {
+    margin-left: 2rem;
+}
+
+
+.value-flex {
+    display: flex;
+    gap: 1%;
+}
+
+.profile-image-box,
+.user_image {
+    width: 20rem;
+    height: 20rem;
+    max-width: 100%;
+    max-height: 100%;
+    margin: 0 auto;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+
+
+}
+
+
+.profile-image {
+    width: 96%;
+    height: 96%;
+    object-fit: cover;
+    border-radius: 50%;
+    cursor: pointer;
+
+}
+
+
+
+.editable-form {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+
+.editable-form-box {
+    display: flex;
+    flex-direction: column;
+    max-width: 90%;
+    margin: 0 auto;
+    gap: 3rem;
+}
+
+.form-field {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.label {
+    font-size: 1.4rem;
+    font-weight: 600;
+    width: 20rem;
+    color: rgba(0, 0, 0, 0.466);
+}
+
+.value {
+    user-select: none;
+    font-size: 1.6rem;
+}
+
+.text-input {
+    display: none;
+    height: 2.6rem;
+    max-width: 100%;
+    margin: 0 auto;
+    border: 1px solid #287b7b77;
+    border-radius: 0.6rem;
+    padding: 2%;
+
+    font-size: 1.5rem;
+
+
+}
+
+.password-section-sub-fill {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    max-width: 100%;
+}
+
+.password-section-sub-fill {
+    color: rgba(0, 0, 0, 0.521);
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+
+.password-section-main {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.password-section-main h2 {
+    font-size: 1.8rem;
+    font-weight: 500;
+
+}
+
+.password-section-sub {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+}
+
+
+
+.buton-change {
+    width: 10rem;
+    border: none;
+    padding: 1rem;
+    background-color: #fcad1bec;
+    border-radius: 5px;
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #fff;
+    transition: ease-out 0.5s;
+}
+
+.buton-change:hover,
+.buton-change:active {
+    cursor: pointer;
+    box-shadow: inset 20rem 0 0 0 #fcdb1b;
+    background-color: #fcdb1b;
+    color: #fff;
+}
+
+.buton-submit {
+    width: 10rem;
+    border: none;
+    padding: 1rem;
+    background-color: #287b7b;
+    border-radius: 5px;
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #fff;
+    transition: ease-out 0.5s;
+}
+
+.buton-submit:hover,
+.buton-submit:active {
+    cursor: pointer;
+    box-shadow: inset 20rem 0 0 0 #4fc4c3;
+    background-color: #4fc4c3;
+    color: #fff;
+}
+
+
+.buton-log-out {
+    width: 10rem;
+    align-self: flex-end;
+    border: none;
+    padding: 1rem;
+    background-color: #eeb1c4;
+    border-radius: 5px;
+    font-size: 1.4;
+    font-weight: 600;
+    transition: ease-out 0.5s;
+}
+
+.buton-log-out:hover,
+.buton-log-out:active {
+    background-color: red;
+    cursor: pointer;
+    box-shadow: inset 20rem 0 0 0 red;
+}
+
+.password-section-sub-fill input {
+    border: 1px solid #287b7b77;
+    padding: 0.5rem;
+    margin: 0.5rem 0;
+    border-radius: 5px;
+}
+
+
+
+.usernev-link:hover,
+.usernev-link:active {
+    color: #fcdb1b !important;
+}
+
+.editable-form-box-main {
+    display: flex;
+    justify-content: space-between;
+    gap: 3rem;
+    margin-top: 5%;
+
+}
+
+.sing-out-and-edit {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+
+}
+
+
+.edit-icon {
+
+    display: flex;
+    align-items: center;
+    margin-left: 1rem;
+    cursor: pointer;
+}
+
+.update-massage-box {
+    display: flex;
+    gap: 2rem;
+}
+
+.update-massage-box p {
+    color: #287b7b;
+    font-size: 1.8rem;
+}

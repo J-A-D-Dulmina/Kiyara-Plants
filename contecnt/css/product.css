@@ -1,0 +1,190 @@
+.new-arivals {
+
+    background-color: #eaf2f2;
+    padding: 10.8rem 3.2rem 9.6rem 3.2rem;
+
+}
+
+.product-slider-new-arivals {
+    max-width: 140rem;
+    margin: 0 auto;
+    position: relative;
+
+}
+
+.product-slider-new-arivals-tital h1 {
+    font-size: 4.4rem;
+    font-weight: 600;
+    text-align: center;
+    padding-bottom: 3rem;
+    margin-bottom: 5rem;
+}
+
+
+.product-row {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 2rem;
+    align-items: center;
+    justify-items: center;
+    transition: transform 1s ease-in-out;
+    margin: auto 1.5%;
+
+}
+
+.product-slide {
+    display: grid;
+    gap: 1.5rem;
+    justify-items: center;
+    align-items: center;
+
+
+    background-color: #fff;
+    border-radius: 3%;
+    padding: 15% 0;
+
+    transform: scale(1);
+    transition: transform 0.5s ease-in-out;
+    cursor: pointer;
+    z-index: 1;
+
+}
+
+.product-slide:hover,
+.product-slides:active {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    background-color: #287b7b !important;
+
+    .p-slid-d-hover {
+        color: #fff;
+    }
+
+}
+
+.product-slide-no-hover:hover,
+.product-slide-no-hover:active {
+    cursor: pointer;
+    background-color: #ffffff;
+
+    .p-slid-d-hover {
+        color: #000000;
+    }
+}
+
+.product-slide.blur {
+    filter: blur(5px);
+}
+
+.product-slide-box {
+    position: relative;
+    transition: transform 0.2s ease-in-out;
+}
+
+.prodcut-clik-main.visible {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    /* Center the div both vertically and horizontally */
+}
+
+.prodcut-clik-main {
+    display: none;
+}
+
+
+
+.align-right {
+    /* justify-self: end;
+    margin-right: 3%; */
+    margin-bottom: -8%;
+}
+
+.product-slide:hover,
+.product-slide:active {
+    cursor: pointer;
+
+
+}
+
+
+.product-slide-img {
+    margin: 0 auto;
+    max-width: 90%;
+
+}
+
+.product-slide h2 {
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: #22271C;
+}
+
+.product-slide h3 {
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: #777A73;
+}
+
+.product-slide p {
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: #eeb1c4;
+}
+
+.product-slide-name-pot {
+    text-align: center;
+    line-height: 2rem;
+}
+
+
+.svg-icon-fevarit-box {
+    text-align: right !important;
+}
+
+.svg-heart {
+    width: 2rem;
+    height: auto;
+}
+
+.svg-icon-big {
+    width: 2.5rem !important;
+}
+
+.svg-heart path {
+    fill: #e2e2e2;
+    transition: fill 0.3s, transform 0.3s, box-shadow 0.3s;
+}
+
+.svg-heart path:hover,
+.svg-heart path:active {
+    fill: #fcdb1b;
+    transform: scale(1.1);
+}
+
+.svg-heart.favorite path {
+    fill: #fcdb1b;
+}
+
+
+
+
+.half-button {
+    position: absolute;
+    top: 50%;
+}
+
+.left-button {
+    left: 0;
+}
+
+.right-button {
+    right: 0;
+}
